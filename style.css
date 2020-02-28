@@ -1,7 +1,27 @@
 
 body {
-  margin: 0;
+  margin: 246px;
   min-width: 250px;
+  animation: colorchange 50s;
+-webkit-animation: colorchange 50s; 
+}
+
+@keyframes colorchange
+{
+0%   {background: red;}
+25%  {background: yellow;}
+50%  {background: blue;}
+75%  {background: green;}
+100% {background: red;}
+}
+
+@-webkit-keyframes colorchange 
+{
+0%   {background: red;}
+25%  {background: yellow;}
+50%  {background: blue;}
+75%  {background: green;}
+100% {background: red;}
 }
 
 * {
@@ -72,6 +92,10 @@ ul li.checked::before {
   padding: 30px 40px;
   color: white;
   text-align: center;
+  background: -webkit-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+  background: -o-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -o-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+  background: -moz-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+  background: linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
 }
 .header:after {
   content: "";
