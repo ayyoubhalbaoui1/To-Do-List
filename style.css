@@ -46,6 +46,7 @@ ul li {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  border-radius: -8px;
 }
 
 ul li:nth-child(odd) {
@@ -89,13 +90,14 @@ ul li.checked::before {
 }
 .header {
   background-color: #333;
-  padding: 30px 40px;
+  padding: -12px 40px;
   color: white;
   text-align: center;
   background: -webkit-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
   background: -o-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -o-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
   background: -moz-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
   background: linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+  border-radius: 15px;
 }
 .header:after {
   content: "";
@@ -116,8 +118,8 @@ input {
 .addBtn {
   padding: 10px;
   width: 25%;
-  background: #d9d9d9;
-  color: #555;
+  background: #f50d0d;
+  color: #fff;
   float: left;
   text-align: center;
   font-size: 16px;
